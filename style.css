@@ -1,0 +1,152 @@
+body{
+    background-color: lightsteelblue;
+    display: flex;
+}
+
+.cell-close{
+  
+    width: 10%;
+    height: 10%;
+    box-sizing: border-box;
+    background: cornflowerblue;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    -webkit-box-shadow:
+		inset 0 0 4px rgba(0,0,0,1),
+		inset 0 2px 1px rgba(255,255,255,.5),
+		inset 0 -9px 2px rgba(0,0,0,.6),
+		inset 0 -12px 2px rgba(255,255,255,.3);
+	-moz-box-shadow:
+		inset 0 0 4px rgba(0,0,0,1),
+		inset 0 2px 1px rgba(255,255,255,.5),
+		inset 0 -9px 2px rgba(0,0,0,.6),
+		inset 0 -12px 2px rgba(255,255,255,.3);
+	box-shadow:
+		inset 0 0 4px rgba(0,0,0,1),
+		inset 0 2px 1px rgba(255,255,255,.5);
+		/*inset 0 -9px 2px rgba(0,0,0,.6),*/
+		/*inset 0 -12px 2px rgba(255,255,255,.3);*/
+    transition: 1s;
+
+}
+.cell-open{
+    width: 10%;
+    height: 10%;
+    box-sizing: border-box;
+    background: #eeee;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    padding: auto; 
+    position: relative;
+}
+.cell-bang{
+    width: 10%;
+    height: 10%;
+    box-sizing: border-box;
+    background: #eeee;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    position: relative;
+ 
+}
+.cell-bang .mine{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    float: none;
+}
+.cell-bang .boom{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    z-index: 5;
+    float: none;
+    position: absolute;
+}
+
+.cell-open .boom{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    z-index: 5;
+}
+
+.cell-open .mine{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cell-open p{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: default;
+}
+.cell-close p{
+    margin: auto;
+    display: none;
+    
+}
+.cell-close .mine{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.cell-close .mark{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cell-open .mark{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 10;
+}
+.cell-close:hover{
+    background: cyan;
+    cursor: pointer;
+    -webkit-box-shadow:
+		0 0 20px rgba(255,255,255,.6),
+		inset 0 0 20px rgba(255,255,255,1);
+	-moz-box-shadow:
+		0 0 20px rgba(255,255,255,.6),
+		inset 0 0 20px rgba(255,255,255,1);
+	box-shadow:
+		0 0 20px rgba(255,255,255,.6),
+		inset 0 0 20px rgba(255,255,255,1);
+}
+
+#wrap{
+    flex-wrap: wrap;
+    display: flex;
+    /*width: 300px;
+    height: 300px;*/
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
